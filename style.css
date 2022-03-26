@@ -1,0 +1,29 @@
+/* quando vamos referenciar uma tag, simplesmente usamos seu nome */
+body {
+  background: #cccccc;
+}
+
+/* quando vamos referenciar um 'id', usamos '#' para chama-lo */
+#banner {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+p {
+  text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+ 
+/* colocando 'em' na frente do 'strong', indica que nos referimos apenas aos 'strong' dentro do 'em'. como 'Barbearia Alura' não está dentro de um 'em', não será usado esse style */
+em strong {
+  color: rgb(255,00,00);
+}
+
+
