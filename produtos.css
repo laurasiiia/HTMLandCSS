@@ -1,0 +1,101 @@
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+/* 940 é uma largura padrão */
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  /* é bom por uma cor no bg para entender aonde voce está mexendo */
+  /* background: #cccccc; */
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  /* border-color: #000000;
+  border-width: 2px;
+  border-style: solid; */
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+/* hover é quando passamos com o mouse por cima */
+.produtos li:hover {
+  border-color: #c78c19;
+}
+
+/* active é quando clicamos no mouse, e deixamos pressionado */
+.produtos li:active {
+  border-color: #088c19;
+}
+
+/* quando passamos o mouse por cima do 'li' em 'produtos', queremos que o h2: */
+.produtos li:hover h2 {  
+  font-size: 34px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descriçao {
+  font-size: 18px;
+}
+
+.produto-preço {
+  font-size: 22px;
+  font-weight: bold;
+  /* margin: 10px 0 0; */
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url("bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
