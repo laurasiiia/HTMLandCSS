@@ -1,3 +1,7 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 header {
   background: #bbbbbb;
   padding: 20px 0;
@@ -29,11 +33,30 @@ nav a {
   text-decoration: none;
 }
 
+/* hover é quando passamos com o mouse por cima */
 nav a:hover {
   color: #c78c19;
   text-decoration: underline;
 }
 
+footer {
+  text-align: center;
+  background: url("bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+/* main {
+  width: 940px;
+  margin: 0 auto;
+} */
+
+/* pagina produtos */
 .produtos {
   width: 940px;
   margin: 0 auto;
@@ -57,7 +80,6 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* hover é quando passamos com o mouse por cima */
 .produtos li:hover {
   border-color: #c78c19;
 }
@@ -88,23 +110,7 @@ nav a:hover {
   margin-top: 10px;
 }
 
-footer {
-  text-align: center;
-  background: url("bg.jpg");
-  padding: 40px 0;
-}
-
-.copyright {
-  color: #ffffff;
-  font-size: 13px;
-  margin: 20px 0 0;
-}
-
-main {
-  width: 940px;
-  margin: 0 auto;
-}
-
+/* pagina de contato */
 form {
   margin: 40px 0;
 }
@@ -162,7 +168,161 @@ thead {
   font-weight: bold;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #000000;
   padding: 8px 15px;
+}
+
+/* pagina inicial */
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+
+  /* em é proporcial ao tamanho da fonte */
+  /* isso quer dizer que sao 2 vezes o tamanho base da fonte, e a margem para baixo é equivalente a um tamanho da fonte atual */
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+  /* color: rgba(0,0,0, 0.3); */
+
+  /* text-shadow: 2px 2px #ff0000; */
+}
+
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  /* cima direita baixo esquerda */
+  margin: 0 20px 20px 0;
+}
+
+/* some methods */
+/* p:first-letter {
+  font-weight: bold;
+}
+p:first-line {
+  font-style: italic;;
+} 
+.titulo-principal:before {
+  content: "[ ";
+}
+.titulo-principal:after {
+  content: " ]";
+}
+*/
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.beneficios {
+  padding: 3em 0;
+  background: #888888;
+  /* sombra interna 
+  box-shadow: inset 0 0 30px #ff0000;*/
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.itens:before {
+  content: "✭";
+}
+
+/* picking by number or odd/even numbers */
+/* .itens:nth-child(2n) {
+  font-weight: bold;
+} */
+
+.imagem-beneficios {
+  width: 60%;
+
+  opacity: 1;
+  transition: 400ms;
+
+  /* eixo X, eixo Y, blur, intensidade da borda e cor */
+  box-shadow: 10px 10px 5px 0px #000000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.3;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+}
+
+/* como selecionar apenas os filhos de primeiro grau 
+ main > p {
+  color: red;
+
+}  como selecionar o primeiro paragrafo apos uma imagem
+img + p {
+  color: blue;
+
+}  como selecionar todos os paragrafos apos uma imagem
+img ~ p {
+  color: yellow;
+} 
+ a ordem dos seletores acima, por terem a mesma força, faz o ultimo item reescrever o penultimo, ou seja, o texto todo ficou amarelo e nenhum azul */
+
+/* como transformar todos os itens MENOS um deles
+ .principal p:not(#missao) {
+   color: orange;
+ } */
+
+
+@media screen and (max-width: 480px) {
+  body {
+    background: red;
+  }
 }
